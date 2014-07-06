@@ -1,0 +1,13 @@
+p This is the partial for view 1.
+    li(ng-repeat="post in posts")
+        .post
+         div
+          h3{{post.title}}
+          {{post.text}}
+          br
+          br
+          a(href='/#/readPost/{{post.id}}') More
+          | -
+          a(href='/#/editPost/{{post.id}}') Edit
+          | -
+          a(href='/#/removePost/{{post.id}}') Delete

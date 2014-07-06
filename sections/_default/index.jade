@@ -1,0 +1,24 @@
+extends layout
+
+block body
+  header
+    .navbar
+      .container
+        ul.menu.nav.nav-pills
+          li
+            a(href='#/home') Develop David
+          li
+            a(href='#/cv') Curriculum Vitae
+          li
+            a(href='#/apps') Appstore
+          li
+            a(href='#/addPost') Add Post
+
+
+
+
+  .container
+      div(ng-view)
+  .footer
+      | David Karlsson © 2014
+
