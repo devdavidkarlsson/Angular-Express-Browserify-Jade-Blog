@@ -3,7 +3,7 @@
 
 module.exports = function (server) {
 
-  var data = {
+  /*var data = {
     "posts": [
       {
         "id": 0,
@@ -16,10 +16,18 @@ module.exports = function (server) {
         "text": "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus."
       }
     ]
-  };
+  };*/
 
   server.get('/api/posts', function (req, res) {
-    res.json(data.posts);
+    var db = req.db;
+    var collection = db.get('posts');
+    collection.find({},{},function(e,docs){
+      console.log(docs);
+      res.json(docs);
+      console.log('RETURNING: '+ docs);
+
+    });
+
   });
 };
 

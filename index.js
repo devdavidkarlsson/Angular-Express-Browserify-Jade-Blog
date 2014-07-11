@@ -18,6 +18,16 @@ var app = express();
  */
 
 // all environments
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/blog');
+
+// Make our db accessible to our router
+app.use(function(req,res,next){
+  req.db = db;
+  next();
+});
+
 app.set('port', process.env.PORT || 4000);
 app.set('views', __dirname + '/sections');
 app.set('view engine', 'jade');
