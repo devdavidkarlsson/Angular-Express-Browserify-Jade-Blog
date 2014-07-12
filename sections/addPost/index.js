@@ -19,3 +19,5 @@ module.exports = function (server) {
     res.json(req.body);
   });
 };
+
+//Make sure title is not already in database...

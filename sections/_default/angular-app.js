@@ -7,10 +7,20 @@ require('angular-route');
 require('bootstrap');
 require('angular-bootstrap');
 
+angular.module('customFilters', []).
+    filter('nospace', function () {
+      return function (value) {
+        return (!value) ? '' : value.replace(/ /g, '_');
+      };
+    });
+
+//Replace module name "developdavid" with your app name.
+
 var app = angular.module('developdavid', [
     'ngRoute',
     'ui.bootstrap',
-    'ngResource'
+    'ngResource',
+    'customFilters'
     ]);
 app.config(function ($routeProvider) {
   //$routeProvider.otherwise({redirectTo : '/home'});

@@ -6,8 +6,8 @@ p This is the partial for view 1.
           {{post.text}}
           br
           br
-          a(href='/#/readPost/{{post.id}}') More
+          a(href='/#/readPost/{{post.title | nospace}}') More
           | -
-          a(href='/#/editPost/{{post.id}}') Edit
+          a(href='/#/editPost/{{post.title | nospace}}') Edit
           | -
-          a(href='/#/removePost/{{post.id}}') Delete
+          a(href='/#/removePost/{{post.title | nospace}}') Delete
