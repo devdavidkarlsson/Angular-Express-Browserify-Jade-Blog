@@ -39,3 +39,37 @@
   color: steelblue;
   border-color: lighten(@base, 30%);
 }
+//Test with Angular-animate
+
+.ng-enter {
+  -webkit-transition: 1s;
+  transition: 1s;
+
+  margin-top: 100%;
+}
+
+.ng-enter-active {
+  margin-top: 0;
+}
+
+.ng-leave {
+  -webkit-transition: 1s;
+  transition: 1s;
+
+  margin-top: 0;
+}
+
+.ng-leave-active {
+  margin-top: 100%;
+}
+
+.ng-move {
+  -webkit-transition: 1s;
+  transition: 1s;
+
+  background: gold;
+}
+
+.ng-move-active {
+  background: #fff;
+}

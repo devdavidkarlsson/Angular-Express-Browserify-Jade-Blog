@@ -3,31 +3,26 @@
 
 module.exports = function (server) {
 
-  var data = {
-    "posts": [
-      {
-        "id": 0,
-        "title": "Lorem ipsum",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "id": 1,
-        "title": "Sed egestas",
-        "text": "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus."
-      }
-    ]
-  };
-
 
   server.put('/api/post/:id', function (req, res) {
 
-      var id = req.params.id;
+    var id = req.params.id;
 
-      if (id >= 0 && id < data.posts.length) {
-        data.posts[id] = req.body;
-        res.json(true);
-      } else {
-        res.json(false);
-      }
+    var db = req.db;
+    var collection = db.get('posts');
+
+      //console.log(docs);
+      // Should build complete response from form data:
+      // data.posts[id] = req.body;
+      var newTitle = req.body.title;
+      console.log('newTitle:' + newTitle);
+
+
+      collection.update({title: id.replace(/_/g, ' ')},{title: newTitle, text: req.body.text}, function (e,count){
+        collection.find({title: newTitle},{},function(e,docs){
+          res.json({post: docs[0]});
+          console.log('RETURNING: '+ docs[0]);
+        });
+      });
   });
 };
