@@ -9,7 +9,6 @@ module.exports = function (server) {
     var db = req.db;
     var collection = db.get('posts');
 
-    //console.log(docs);
     // Should build complete response from form data:
     // data.posts[id] = req.body;
     collection.remove({title: id},{w:1});
