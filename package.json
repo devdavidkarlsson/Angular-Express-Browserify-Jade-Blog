@@ -25,7 +25,8 @@
     "angular-resource": "./bower_components/angular-resource/angular-resource.js",
     "angular-route": "./bower_components/angular-route/angular-route.js",
     "angular-bootstrap": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
-    "angular-animate": "./bower_components/angular-animate/angular-animate.js"
+    "angular-animate": "./bower_components/angular-animate/angular-animate.js",
+    "angular-sanitize": "./bower_components/angular-sanitize/angular-sanitize.js"
 
   },
   "browserify-shim": {
@@ -36,7 +37,11 @@
         "jquery:$"
       ]
     },
-    "angular-bootstrap": {
+    "angular-sanitize": {
+      "depends": [
+        "angular:angular"
+      ]
+    }, "angular-bootstrap": {
       "depends": [
         "angular:angular"
       ]

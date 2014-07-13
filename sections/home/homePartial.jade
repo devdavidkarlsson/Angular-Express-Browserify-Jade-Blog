@@ -3,7 +3,7 @@ p This is the partial for view 1.
         .post
          div
           h3{{post.title}}
-          {{post.text}}
+          div(ng-bind-html="post.text")//{{post.text}}
           br
           br
           a(href='/#/readPost/{{post.title | nospace}}') More

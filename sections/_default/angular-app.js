@@ -7,6 +7,7 @@ require('angular-route');
 require('bootstrap');
 require('angular-bootstrap');
 require('angular-animate');
+require('angular-sanitize');
 
 angular.module('customFilters', []).
     filter('nospace', function () {
@@ -22,7 +23,8 @@ var app = angular.module('developdavid', [
     'ui.bootstrap',
     'ngResource',
     'customFilters',
-    'ngAnimate'
+    'ngAnimate',
+    'ngSanitize'
     ]);
 app.config(function ($routeProvider) {
   //$routeProvider.otherwise({redirectTo : '/home'});
