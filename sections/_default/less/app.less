@@ -5,12 +5,13 @@
 
 //Basic styling:
 @base: #f938ab;
-@body-bg: dimgray;
+@body-bg: lightcyan;
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
   box-shadow:         @style @c;
-  background-color: lightgray;
+  background-color: white;
+  opacity: 0.8;
   border-radius: 5px;
 
 }
@@ -19,10 +20,10 @@
 
 }
 
-.nav{ .box-shadow(0 0 5px, 30%)}
+.nav{ .box-shadow(0 0 10px, 80%)}
 
 .nav-pills{
-  background-color: lightgray;
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -32,13 +33,13 @@
   div[class*=component] {
     padding: 5px;
     margin: 10px;
-    .box-shadow(0 0 5px, 30%)}
+    .box-shadow(0 0 10px, 80%)}
 }
 
 
 .footer {
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
   color: steelblue;
   border-color: lighten(@base, 30%);
 }
