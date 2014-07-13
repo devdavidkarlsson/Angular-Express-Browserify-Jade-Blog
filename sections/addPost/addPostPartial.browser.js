@@ -7,7 +7,7 @@ function AddPostCtrl($scope, $http, $location) {
   $scope.submitPost = function () {
     $http.post('/api/addPost', $scope.form).
         success(function(data) {
-          $location.path('/');
+          $location.path('/home');
         });
   };
 }
