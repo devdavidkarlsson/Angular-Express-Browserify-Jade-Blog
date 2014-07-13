@@ -1,9 +1,14 @@
-li(ng-repeat="post in posts")
-    .post
-      div
-        h3{{post.title}}
-        h6(ng-bind-html="post.text")
-        a(href='/#/readPost/{{post.title | nospace}}') More
-    img( class="img-scroller",src="img/applz.png", du-parallax, y="background", alt="", style="float: right")
-
-
+p
+    li(ng-repeat="post in posts")
+        .post
+         div
+          .component
+              h3{{post.title}}
+              div(ng-bind-html="post.text")//{{post.text}}
+              br
+              br
+              a(href='/#/readPost/{{post.title | nospace}}') More
+              | -
+              a(href='/#/editPost/{{post.title | nospace}}') Edit
+              | -
+              a(href='/#/removePost/{{post.title | nospace}}') Delete

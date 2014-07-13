@@ -10,9 +10,6 @@ require('angular-animate');
 require('angular-sanitize');
 require('text-angular');
 require('text-angular-setup');
-require('angular-parallax');
-require('angular-scroll');
-
 
 
 angular.module('customFilters', []).
@@ -31,8 +28,7 @@ var app = angular.module('developdavid', [
     'customFilters',
     'ngAnimate',
     'ngSanitize',
-    'textAngular',
-    'duParallax'
+    'textAngular'
     ]);
 app.config(function ($routeProvider) {
   //$routeProvider.otherwise({redirectTo : '/home'});

@@ -28,9 +28,7 @@
     "angular-animate": "./bower_components/angular-animate/angular-animate.js",
     "angular-sanitize": "./bower_components/textAngular/src/textAngular-sanitize.js",
     "text-angular-setup": "./bower_components/textAngular/src/textAngularSetup.js",
-    "text-angular": "./bower_components/textAngular/src/textAngular.js",
-    "angular-scroll": "./bower_components/angular-scroll//angular-scroll.js",
-    "angular-parallax": "./bower_components/ng-parallax/angular-parallax.js"
+    "text-angular": "./bower_components/textAngular/src/textAngular.js"
 
   },
   "browserify-shim": {
@@ -39,14 +37,6 @@
       "exports": "angular",
       "depends": [
         "jquery:$"
-      ]
-    },"angular-scroll": {
-      "depends": [
-        "angular:angular"
-      ]
-    },"angular-parallax": {
-      "depends": [
-        "angular:angular"
       ]
     },"text-angular-setup": {
       "depends": [
