@@ -35,6 +35,7 @@ app.use(express.compress());
 app.use(express.methodOverride());
 app.use(express.bodyParser());
 app.use('/css', expressLess(__dirname + '/sections/_default/less'));
+app.use('/fonts', express.static(__dirname + '/bower_components/font-awesome/fonts'));
 app.use(express.static(path.join(__dirname, 'static')));
 app.use('/vendor', express.static(__dirname + '/bower_components'));
 app.use(app.router);

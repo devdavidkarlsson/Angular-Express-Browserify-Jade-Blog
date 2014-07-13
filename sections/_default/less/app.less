@@ -1,6 +1,9 @@
 /* Put your styles here */
-@import "../../../bower_components/bootstrap/less/bootstrap.less";
 
+@import "../../../bower_components/bootstrap/less/bootstrap.less";
+@import "../../../bower_components/font-awesome/less/font-awesome.less";
+
+//Basic styling:
 @base: #f938ab;
 @body-bg: dimgray;
 
@@ -26,7 +29,7 @@
 .post {
   color: saturate(@base, 5%);
   border-color: lighten(@base, 30%);
-  div {
+  div[class*=component] {
     padding: 5px;
     margin: 10px;
     .box-shadow(0 0 5px, 30%)}
@@ -39,7 +42,7 @@
   color: steelblue;
   border-color: lighten(@base, 30%);
 }
-//Test with Angular-animate
+//Angular-animate:
 
 .ng-enter {
   -webkit-transition: 1s;
@@ -72,4 +75,50 @@
 
 .ng-move-active {
   background: #fff;
+}
+
+
+input[name=title]{
+  width: 80%;
+}
+
+//TextAngular editor:
+
+.ta-toolbar {
+  width:100%;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 1px 3px 1px 1px;
+}
+
+div[name*=textAngularToolbar]{
+  border:none;
+}
+
+.form-content {
+  min-height: 300px;
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 100%;
+  margin:20px 0;
+  margin: 10px;
+}
+
+.ta-scroll-window{
+  background-color: lightgray !important;
+
+}
+
+div[id*=taTextElement]{
+  background-color: #ffffff;
+}
+
+.post div{
+  padding: 2px;
+  margin: 1px 1px 1px 1px;
+}
+.btn-toolbar .btn-group, .btn-toolbar .input-group {
+  float: none;
 }

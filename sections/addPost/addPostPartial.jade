@@ -1,9 +1,10 @@
 .post
   div
-    h2 Write a new post
-    label(for='title') Title:
-    input(ng-model='form.title', name='title')
-    p Body:
-    textarea(ng-model='form.text', cols='50', rows='15')
-    p
-      button(ng-click='submitPost()') Submit Post
+    .component
+        h2 Write a new post
+        label(for='title') Title:
+        input(ng-model='form.title', name='title')
+        p
+        text-angular(ng-model='form.text', ta-text-editor-class="form-content", ta-html-editor-class="form-content", ta-focussed-class="focused")
+        p
+          button(ng-click='submitPost()') Submit Post

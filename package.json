@@ -26,7 +26,9 @@
     "angular-route": "./bower_components/angular-route/angular-route.js",
     "angular-bootstrap": "./bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
     "angular-animate": "./bower_components/angular-animate/angular-animate.js",
-    "angular-sanitize": "./bower_components/angular-sanitize/angular-sanitize.js"
+    "angular-sanitize": "./bower_components/textAngular/src/textAngular-sanitize.js",
+    "text-angular-setup": "./bower_components/textAngular/src/textAngularSetup.js",
+    "text-angular": "./bower_components/textAngular/src/textAngular.js"
 
   },
   "browserify-shim": {
@@ -36,8 +38,15 @@
       "depends": [
         "jquery:$"
       ]
-    },
-    "angular-sanitize": {
+    },"text-angular-setup": {
+      "depends": [
+        "angular:angular"
+      ]
+    },"text-angular": {
+      "depends": [
+        "angular:angular"
+      ]
+    },"angular-sanitize": {
       "depends": [
         "angular:angular"
       ]
