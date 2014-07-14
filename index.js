@@ -38,6 +38,36 @@ app.use('/css', expressLess(__dirname + '/sections/_default/less'));
 app.use('/fonts', express.static(__dirname + '/bower_components/font-awesome/fonts'));
 app.use(express.static(path.join(__dirname, 'static')));
 app.use('/vendor', express.static(__dirname + '/bower_components'));
+
+//App auth:
+
+// middleware
+
+app.use(express.cookieParser('shhhh, very secret'));
+app.use(express.session());
+
+// Session-persisted message middleware
+
+app.use(function(req, res, next){
+  var err = req.session.error;
+  var msg = req.session.success;
+  delete req.session.error;
+  delete req.session.success;
+  res.locals.message = '';
+  if (err) res.locals.message = '<p class="msg error">' + err + '</p>';
+  if (msg) res.locals.message = '<p class="msg success">' + msg + '</p>';
+  next();
+});
+
+app.get('/logout', function(req, res){
+  // destroy the user's session to log them out
+  // will be re-created next request
+  req.session.destroy(function(){
+    res.redirect('/');
+  });
+});
+
+
 app.use(app.router);
 
 /**

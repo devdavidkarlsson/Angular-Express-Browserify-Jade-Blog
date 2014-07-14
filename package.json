@@ -1,6 +1,6 @@
 {
   "name": "developdavid",
-  "version": "0.0.0-6",
+  "version": "0.0.0-7",
   "main": "index.js",
   "dependencies": {
     "express": "~3.2.6",
@@ -12,7 +12,6 @@
     "browserify-shim": "^3.3.1",
     "mongodb": "*",
     "monk": "*"
-
   },
   "scripts": {
     "test": "grunt",
@@ -29,7 +28,6 @@
     "angular-sanitize": "./bower_components/textAngular/src/textAngular-sanitize.js",
     "text-angular-setup": "./bower_components/textAngular/src/textAngularSetup.js",
     "text-angular": "./bower_components/textAngular/src/textAngular.js"
-
   },
   "browserify-shim": {
     "jquery": "$",
@@ -38,19 +36,23 @@
       "depends": [
         "jquery:$"
       ]
-    },"text-angular-setup": {
+    },
+    "text-angular-setup": {
       "depends": [
         "angular:angular"
       ]
-    },"text-angular": {
+    },
+    "text-angular": {
       "depends": [
         "angular:angular"
       ]
-    },"angular-sanitize": {
+    },
+    "angular-sanitize": {
       "depends": [
         "angular:angular"
       ]
-    }, "angular-bootstrap": {
+    },
+    "angular-bootstrap": {
       "depends": [
         "angular:angular"
       ]
