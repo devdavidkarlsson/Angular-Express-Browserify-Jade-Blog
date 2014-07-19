@@ -7,8 +7,10 @@ p
               div(ng-bind-html="post.text")//{{post.text}}
               br
               br
+
               a(href='/#/readPost/{{post.title | nospace}}') More
-              | -
-              a(href='/#/editPost/{{post.title | nospace}}') Edit
-              | -
-              a(href='/#/removePost/{{post.title | nospace}}') Delete
+              if(loggedIn)
+                | -
+                a(href='/#/editPost/{{post.title | nospace}}') Edit
+                | -
+                a(href='/#/removePost/{{post.title | nospace}}') Delete

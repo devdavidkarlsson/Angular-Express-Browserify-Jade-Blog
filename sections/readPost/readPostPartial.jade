@@ -8,7 +8,9 @@ section
       br
       br
       a(href='/#/home/') Back
-      | -
-      a(href='/#/editPost/{{post.title | nospace}}') Edit
-      | -
-      a(href='/#/removePost/{{post.title | nospace}}') Delete
+      if(loggedIn)
+
+        | -
+        a(href='/#/editPost/{{post.title | nospace}}') Edit
+        | -
+        a(href='/#/removePost/{{post.title | nospace}}') Delete

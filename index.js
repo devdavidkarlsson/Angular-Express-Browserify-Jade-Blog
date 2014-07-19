@@ -49,21 +49,35 @@ app.use(express.session());
 // Session-persisted message middleware
 
 app.use(function(req, res, next){
+  console.log('MIDDLEWARE CALL');
   var err = req.session.error;
   var msg = req.session.success;
   delete req.session.error;
   delete req.session.success;
   res.locals.message = '';
-  if (err) res.locals.message = '<p class="msg error">' + err + '</p>';
-  if (msg) res.locals.message = '<p class="msg success">' + msg + '</p>';
+  //If we dont mind exposing the whole user object:
+  //res.locals.user = req.session.user || null;
+  //If we only want to make sure user is logged in:
+  res.locals.loggedIn = (req.session.user) ? true : false;
+  if (err){
+    res.locals.message = '<p class="msg error">' + err + '</p>';
+    console.log('AUTH Error');
+  }
+  if (msg){
+    console.log('AUTH success');
+    console.log(res.locals.loggedIn);
+    res.redirect('/#/home');
+    res.locals.message = '<p class="msg success">' + msg + '</p>';
+  }
   next();
 });
 
 app.get('/logout', function(req, res){
   // destroy the user's session to log them out
   // will be re-created next request
+  console.log('logged out');
   req.session.destroy(function(){
-    res.redirect('/');
+    //res.redirect('/#/home');
   });
 });
 
@@ -93,4 +107,5 @@ app.get(/\/html\/([\w\/]+)\.html/, function (req, res) {
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express app listening on port ' + app.get('port'));
 });
+
 

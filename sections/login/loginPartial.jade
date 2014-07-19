@@ -2,12 +2,16 @@
   div
     .component
         h2 Login:
-        | Try accessing <a href="/restricted">/restricted</a>, then authenticate with "tj" and "foobar".
-        p
-          label(Username:)
-          input(type="text", ng-model="form.username", name="username")
-        p
-          label(Password:)
-          input(type="text", ng-model="form.password", name="password")
-        p
+        if(!loggedIn)
+          | Authenticate with "tj" and "foobar".
+          p
+            label(Username:)
+            input(type="text", ng-model="form.username", name="username")
+          p
+            label(Password:)
+            input(type="text", ng-model="form.password", name="password")
+          p
             button(ng-click='login()') Login
+        else
+          | You are logged in. Navigate the page using the top menu.
+

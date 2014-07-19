@@ -22,7 +22,7 @@ module.exports = function (server) {
     var db = req.db;
     var collection = db.get('posts');
     collection.find({},{},function(e,docs){
-      console.log(docs);
+      //console.log(docs);
       res.json(docs);
       console.log('RETURNING: '+ docs);
 

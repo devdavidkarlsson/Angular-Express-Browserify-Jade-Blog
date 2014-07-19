@@ -11,12 +11,19 @@ block body
             a(href='#/cv') Curriculum Vitae
           li
             a(href='#/apps') Appstore
+          if(loggedIn)
+            li
+              a(href='#/addPost') Add Post
+            li(style="float: right;")
+              a(href='/logout') Logout
 
 
 
 
 
-  .container
+
+
+      .container
       div(ng-view)
   .footer
       a(href='/#/administrator/') David Karlsson © 2014

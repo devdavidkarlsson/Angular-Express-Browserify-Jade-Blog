@@ -6,7 +6,7 @@ module.exports = function (server) {
   server.post('/api/addPost', function(req,res){
     //data.posts.push(req.body);
     //res.json(req.body);
-
+    if (req.session.user) {
     var db = req.db;
     var collection = db.get('posts');
 
@@ -22,7 +22,10 @@ module.exports = function (server) {
       });
     });
 
-
+      }
+    else{
+      res.redirect('#/administrator');
+    }
   });
 };
 

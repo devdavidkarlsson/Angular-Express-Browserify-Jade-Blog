@@ -3,6 +3,8 @@
 
 function homeCtrl($scope, $http) {
   $scope.get = function () {
+    console.log('home get');
+
     $http({
       data    : $scope.ask,
       method  : 'get',

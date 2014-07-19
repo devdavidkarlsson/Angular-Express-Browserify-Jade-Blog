@@ -36,7 +36,10 @@ module.exports = function (server) {
     // found the user
     hash(pass, user.salt, function(err, hash){
       if (err) return fn(err);
-      if (hash.toString() == user.hash) return fn(null, user);
+      if (hash.toString() == user.hash){
+        console.log('Auth success');
+        return fn(null, user);
+      }
       fn(new Error('invalid password'));
     });
   }
@@ -53,7 +56,6 @@ module.exports = function (server) {
 
 
   server.post('/api/login', function(req,res){
-    console.log("received login post");
     //data.posts.push(req.body);
     //res.json(req.body);
 
@@ -70,14 +72,15 @@ module.exports = function (server) {
           // or in this case the entire user object
           req.session.user = user;
           req.session.success = 'Authenticated as ' + user.name + ' click to <a href="/logout">logout</a>. ' + ' You may now access <a href="/restricted">/restricted</a>.';
-          //res.redirect('#/administrator');
+          console.log(req.session.success);
+          //res.redirect('/');
+          res.redirect('back');
         });
       } else {
         req.session.error = 'Authentication failed, please check your ' + ' username and password.' + ' (use "tj" and "foobar")';
-        //res.redirect('#/administrator');
+        res.redirect('#/administrator');
       }
     });
   });
 };
 
-//Make sure title is not already in database...

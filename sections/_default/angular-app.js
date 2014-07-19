@@ -31,7 +31,7 @@ var app = angular.module('developdavid', [
     'textAngular'
     ]);
 app.config(function ($routeProvider) {
-  //$routeProvider.otherwise({redirectTo : '/home'});
+  $routeProvider.otherwise({redirectTo : '/home'});
 });
 
 var uiModules = {
