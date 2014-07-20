@@ -66,8 +66,8 @@ app.use(function(req, res, next){
   if (msg){
     console.log('AUTH success');
     console.log(res.locals.loggedIn);
-    res.redirect('/#/home');
-    res.locals.message = '<p class="msg success">' + msg + '</p>';
+    //res.redirect('/#/home');
+    //res.locals.message = '<p class="msg success">' + msg + '</p>';
   }
   next();
 });
@@ -77,7 +77,7 @@ app.get('/logout', function(req, res){
   // will be re-created next request
   console.log('logged out');
   req.session.destroy(function(){
-    //res.redirect('/#/home');
+    res.redirect('/#/home');
   });
 });
 

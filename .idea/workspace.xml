@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/_default/angular-app.js" afterPath="$PROJECT_DIR$/sections/_default/angular-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/home/homePartial.browser.js" afterPath="$PROJECT_DIR$/sections/home/homePartial.browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/home/homePartial.jade" afterPath="$PROJECT_DIR$/sections/home/homePartial.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/_default/index.jade" afterPath="$PROJECT_DIR$/sections/_default/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/addPost/index.js" afterPath="$PROJECT_DIR$/sections/addPost/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/home/index.js" afterPath="$PROJECT_DIR$/sections/home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/login/index.js" afterPath="$PROJECT_DIR$/sections/login/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/login/loginPartial.browser.js" afterPath="$PROJECT_DIR$/sections/login/loginPartial.browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/login/loginPartial.jade" afterPath="$PROJECT_DIR$/sections/login/loginPartial.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/readPost/readPostPartial.jade" afterPath="$PROJECT_DIR$/sections/readPost/readPostPartial.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="developDavid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,15 +70,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readPostPartial.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sections/readPost/readPostPartial.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="148" selection-end="160" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="loginPartial.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sections/login/loginPartial.jade">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,13 +90,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sections/editPost/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.74204946">
+            <state line="27" column="30" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="57" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.17826825">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,18 +178,18 @@
         <option value="$PROJECT_DIR$/sections/readPost/readPostPartial.jade" />
         <option value="$PROJECT_DIR$/sections/login/index.js" />
         <option value="$PROJECT_DIR$/sections/home/homePartial.jade" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/sections/home/homePartial.browser.js" />
         <option value="$PROJECT_DIR$/sections/_default/angular-app.js" />
         <option value="$PROJECT_DIR$/sections/login/loginPartial.browser.js" />
         <option value="$PROJECT_DIR$/sections/_default/index.jade" />
         <option value="$PROJECT_DIR$/sections/login/loginPartial.jade" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1280" />
+    <option name="width" value="1920" />
     <option name="height" value="737" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -505,13 +494,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="737" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="737" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19570406" sideWeight="0.6693679" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12967844" sideWeight="0.6693679" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -601,13 +590,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="44" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,10 +691,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sections/editPost/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.74204946">
+        <state line="27" column="30" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="57" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.17826825">
+          <folding />
         </state>
       </provider>
     </entry>
