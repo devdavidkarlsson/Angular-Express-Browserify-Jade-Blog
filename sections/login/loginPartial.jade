@@ -3,15 +3,14 @@
     .component
         h2 Login:
         if(!loggedIn)
-          | Authenticate with "tj" and "foobar".
-          p
-            label(Username:)
-            input(type="text", ng-model="form.username", name="username")
-          p
-            label(Password:)
-            input(type="text", ng-model="form.password", name="password")
-          p
-            button(ng-click='login()') Login
+            | Authenticate with "tj" and "foobar".
+            p
+                label(Username:)
+                input(type="text", ng-model="form.username", name="username")
+            p
+                label(Password:)
+                input(type="text", ng-model="form.password", name="password")
+            p
+                button(ng-click='login()', class="btn btn-default btn-lg", data-toggle="modal", data-target="#myModal") Login
         else
-          | You are logged in. Navigate the page using the top menu.
-
+            | You are logged in. Navigate the page using the top menu.

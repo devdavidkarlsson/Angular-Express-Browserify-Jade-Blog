@@ -15,6 +15,7 @@
     "angular-bootstrap": "~0.10.0",
     "angular": "~1.2.13-build.2255",
     "angular-resource": "~1.2.13",
-    "angular-route": "~1.2.13-build.2255"
+    "angular-route": "~1.2.13-build.2255",
+    "angular-masonry": "~0.9.1"
   }
 }

@@ -22,3 +22,5 @@ module.exports = function (app) {
     $routeProvider.when('/home', {controller : homeCtrl, templateUrl : '/html/home/homePartial.html'});
   });
 };
+
+

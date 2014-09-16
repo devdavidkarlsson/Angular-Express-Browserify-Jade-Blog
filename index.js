@@ -20,7 +20,8 @@ var app = express();
 // all environments
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/blog');
+//var db = monk('localhost:27017/blog');
+var db = monk('mongodb://dozeone:qwerty123@kahana.mongohq.com:10066/blog');
 
 // Make our db accessible to our router
 app.use(function(req,res,next){
@@ -59,6 +60,7 @@ app.use(function(req, res, next){
   //res.locals.user = req.session.user || null;
   //If we only want to make sure user is logged in:
   res.locals.loggedIn = (req.session.user) ? true : false;
+  //res.locals.loggedIn=true;
   if (err){
     res.locals.message = '<p class="msg error">' + err + '</p>';
     console.log('AUTH Error');

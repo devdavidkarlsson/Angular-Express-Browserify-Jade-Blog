@@ -29,6 +29,7 @@ var app = angular.module('developdavid', [
     'ngAnimate',
     'ngSanitize',
     'textAngular'
+    /*,'wu.masonry'*/
     ]);
 app.config(function ($routeProvider) {
   $routeProvider.otherwise({redirectTo : '/home'});

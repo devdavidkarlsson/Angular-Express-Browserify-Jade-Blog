@@ -4,9 +4,11 @@
 module.exports = function (server) {
 
   server.post('/api/addPost', function(req,res){
+    console.log("ADD POST RECEIVED");
     //data.posts.push(req.body);
     //res.json(req.body);
     if (req.session.user) {
+    console.log("Appears to have valid session");
     var db = req.db;
     var collection = db.get('posts');
 
@@ -24,6 +26,7 @@ module.exports = function (server) {
 
       }
     else{
+      console.log("no valid session");
       res.redirect('#/administrator');
     }
   });
