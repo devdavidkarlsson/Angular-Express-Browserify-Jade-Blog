@@ -51,7 +51,13 @@ module.exports = function (grunt) {
     ]
   );
   
-  grunt.registerTask('heroku', ['jshint', 'browserify','uglify']);
+  grunt.registerTask('heroku', [
+      'jshint',
+      'browserify',
+      'uglify',
+      'clean'
+    ]
+  );
 
 };
 
