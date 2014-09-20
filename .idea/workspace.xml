@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/_default/angular-app.js" afterPath="$PROJECT_DIR$/sections/_default/angular-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/home/homePartial.browser.js" afterPath="$PROJECT_DIR$/sections/home/homePartial.browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/home/homePartial.jade" afterPath="$PROJECT_DIR$/sections/home/homePartial.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/addPost/index.js" afterPath="$PROJECT_DIR$/sections/addPost/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/login/loginPartial.jade" afterPath="$PROJECT_DIR$/sections/login/loginPartial.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="developDavid.iws" />
@@ -33,7 +26,7 @@
     <file path="/readPostPartial.jade" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1405245202385" ignored="false" />
     <file path="/editPostPartial.jade" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1405244852469" ignored="false" />
     <file path="/addPostPartial.jade" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1405244770769" ignored="false" />
-    <file path="/Dummy.txt" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1410891858275" ignored="false" />
+    <file path="/Dummy.txt" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1411062212824" ignored="false" />
     <file path="/a.dummy" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1405117139897" ignored="false" />
     <file path="/package.json" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1405239928674" ignored="false" />
     <file path="/loginPartial.jade" changelist="2dceaa2d-920b-4029-8f70-f3ab40dbbfec" time="1406579876748" ignored="false" />
@@ -58,10 +51,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="angular-app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="angular-app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sections/_default/angular-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.54159594">
+            <state line="31" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser-requires.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sections/_default/browser-requires.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="45" selection-start="618" selection-end="618" vertical-scroll-proportion="0.77720207">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -73,9 +77,7 @@
         <entry file="file://$PROJECT_DIR$/sections/editPost/editPostPartial.browser.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,6 +150,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,49 +367,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="developDavid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="developDavid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="104" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="105" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="104" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="105" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="104" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../developDavidBlog/angular-express-blog" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="115" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="905" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="903" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="110" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="107" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="114" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="893" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="895" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="109" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="106" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -459,17 +447,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="737" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31583133" sideWeight="0.6709887" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31583133" sideWeight="0.6709887" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -543,53 +531,79 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sections/addPost/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="8" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sections/login/pass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="13" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="28" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/login/loginPartial.browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="64" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/login/loginPartial.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="410" selection-end="410" vertical-scroll-proportion="0.5785124" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/home/homePartial.browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/home/homePartial.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/apps/appView.browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/_default/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="440" selection-end="440" vertical-scroll-proportion="0.57253885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/editPost/editPostPartial.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/apps/appsPartial.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sections/editPost/editPostPartial.browser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/sections/_default/angular-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="13" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/login/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="28" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/login/loginPartial.browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="64" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/login/loginPartial.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="410" selection-end="410" vertical-scroll-proportion="0.5785124">
+        <state line="31" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -598,69 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sections/_default/browser-requires.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/home/homePartial.browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/home/homePartial.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/apps/appView.browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/_default/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="440" selection-end="440" vertical-scroll-proportion="0.57253885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/editPost/editPostPartial.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/apps/appsPartial.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/editPost/editPostPartial.browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sections/_default/angular-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.54159594">
+        <state line="20" column="45" selection-start="618" selection-end="618" vertical-scroll-proportion="0.77720207">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
