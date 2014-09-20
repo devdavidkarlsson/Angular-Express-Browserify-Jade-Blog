@@ -21,7 +21,7 @@ var app = express();
 var mongo = require('mongodb');
 var monk = require('monk');
 //var db = monk('localhost:27017/blog');
-var db = monk('mongodb://dozeone:qwerty123@kahana.mongohq.com:10066/blog');
+var db = monk('mongodb://dozeone:david69@kahana.mongohq.com:10066/blog');
 
 // Make our db accessible to our router
 app.use(function(req,res,next){
