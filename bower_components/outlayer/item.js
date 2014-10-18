@@ -47,6 +47,8 @@ function outlayerItemDefinition( EventEmitter, getSize, getStyleProperty ) {
 
 // -------------------------- CSS3 support -------------------------- //
 
+
+
 var transitionProperty = getStyleProperty('transition');
 var transformProperty = getStyleProperty('transform');
 var supportsCSS3 = transitionProperty && transformProperty;
@@ -513,6 +515,8 @@ if ( typeof define === 'function' && define.amd ) {
 } else {
   // browser global
   window.Outlayer = {};
+  window.getStyleProperty= require('getStyleProperty');
+  window.EventEmitter= require('eventEmitter');
   window.Outlayer.Item = outlayerItemDefinition(
     window.EventEmitter,
     window.getSize,

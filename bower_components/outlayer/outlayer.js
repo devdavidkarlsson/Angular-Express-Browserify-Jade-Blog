@@ -998,7 +998,7 @@ if ( typeof define === 'function' && define.amd ) {
   // browser global
   window.Outlayer = outlayerDefinition(
     window.eventie,
-    window.docReady,
+    window.docReady=require('docReady'),
     window.EventEmitter,
     window.getSize,
     window.matchesSelector,

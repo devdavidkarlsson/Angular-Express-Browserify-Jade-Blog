@@ -32,7 +32,25 @@
     "angular-animate": "./bower_components/angular-animate/angular-animate.js",
     "angular-sanitize": "./bower_components/textAngular/src/textAngular-sanitize.js",
     "text-angular-setup": "./bower_components/textAngular/src/textAngularSetup.js",
-    "text-angular": "./bower_components/textAngular/src/textAngular.js"
+    "text-angular": "./bower_components/textAngular/src/textAngular.js",
+
+    "jquery-bridget": "./bower_components/jquery-bridget/jquery.bridget.js",
+    "get-size": "bower_components/get-size/get-size.js",
+    "eventie":"./bower_components/eventie/eventie.js",
+    "docReady": "./bower_components/doc-ready/doc-ready.js",
+    "matches-selector": "./bower_components/matches-selector/matches-selector.js",
+    "eventEmitter": "./bower_components/eventEmitter/EventEmitter.js",
+    "getStyleProperty": "./bower_components/get-style-property/get-style-property.js",
+    "outlayer-item": "./bower_components/outlayer/item.js",
+    "outlayer": "./bower_components/outlayer/outlayer.js",
+    "masonry": "./bower_components/masonry/masonry.pkgd.js",
+    "images-loaded": "./bower_components/imagesloaded/imagesloaded.js",
+    "angular-masonry": "./bower_components/angular-masonry/angular-masonry.js",
+
+    "ng-scroll": "./bower_components/angular-scroll/angular-scroll.js",
+    "ng-parallax": "./bower_components/ng-parallax/angular-parallax.js",
+
+    "scroll": "./directives/scrollFade.js"
   },
   "browserify-shim": {
     "jquery": "$",
@@ -88,7 +106,8 @@
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-browserify": "^1.3.1",
     "grunt-contrib-uglify": "^0.4.0",
-    "grunt-contrib-clean": "^0.5.0"
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-bower-concat": "~0.3.0"
   },
   "subdomain": "developDavid",
   "engines": {

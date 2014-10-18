@@ -4,8 +4,88 @@
 @import "../../../bower_components/font-awesome/less/font-awesome.less";
 
 //Basic styling:
-@base: #f938ab;
-@body-bg: lightcyan;
+@base: black;
+body{
+
+/* IE10 Consumer Preview */
+background-image: -ms-linear-gradient(top, #66BBDD 0%, #FFFFFF 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #66BBDD 0%, #FFFFFF 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(top, #66BBDD 0%, #FFFFFF 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #66BBDD), color-stop(1, #FFFFFF));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #66BBDD 0%, #FFFFFF 100%);
+
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to bottom, #66BBDD 0%, #FFFFFF 100%);
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 82%;
+  text-align: center;
+}
+
+.circular {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(../image/face.png) no-repeat;
+  background-size: 101%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circular img {
+
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.circular fade{
+  animation: slideup 2s;
+  -moz-animation: slideup 2s;
+  -webkit-animation: slideup 2s;
+  -o-animation: slideup 2s;
+}
+
+
+@keyframes slideup {
+  0% {
+    top:0px;
+    opacity: 1;
+  }
+  75% {
+    top:0px;
+    opacity: .5;
+  }
+  100% {
+    top:-20px;
+    opacity: 0;
+  }
+}
+
+header{
+  min-height: 500px;
+}
+
+.post .alert{
+  margin: 10px;
+}
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
@@ -27,13 +107,49 @@
   border-radius: 5px;
 }
 
+
 .post {
   color: saturate(@base, 5%);
   border-color: lighten(@base, 30%);
   div[class*=component] {
     padding: 5px;
-    margin: 10px;
+    margin-top: 10px;
     .box-shadow(0 0 10px, 80%)}
+}
+
+.login-component{
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax-flow{
+  padding: 5px;
+  margin: 10px;
+  .box-shadow(0 0 10px, 80%);
+  }
+
+.parallax-brick{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 80%;
+
+}
+
+img{
+  z-index:0;
+  width:100%;
+  height:100%;
+}
+
+.parallax-p{
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  padding: 100px 20px;
+
 }
 
 
@@ -104,21 +220,26 @@ div[name*=textAngularToolbar]{
   font-family: inherit;
   font-size: 100%;
   margin:20px 0;
-  margin: 10px;
+  //margin: 10px;
 }
 
 .ta-scroll-window{
-  background-color: lightgray !important;
+  //background-color: lightgray !important;
 
 }
 
-div[id*=taTextElement]{
+div[id*=taTextElement],textarea[id*=taHtmlElement]{
   background-color: #ffffff;
+  border: 1px solid lightgray;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .post div{
-  padding: 2px;
-  margin: 1px 1px 1px 1px;
+  //padding: 2px;
+ // margin: 1px 1px 1px 1px;
 }
 .btn-toolbar .btn-group, .btn-toolbar .input-group {
   float: none;

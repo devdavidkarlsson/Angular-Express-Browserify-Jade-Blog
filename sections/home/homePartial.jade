@@ -1,5 +1,14 @@
 p
 
+.parallax-flow
+    .center
+        |<iframe width="500" height="751" src="//www.youtube.com/embed/xTptz5uQMzg" frameborder="0" allowfullscreen></iframe>
+        |<iframe width="500" height="751" src="//www.youtube.com/embed/N2GLPMkPzYk" frameborder="0" allowfullscreen></iframe>
+    div(class="parallax-brick", ng-repeat="brick in bricks")
+        .parallax-p
+            |Bacon ipsum dolor sit amet sausage tail capicola ground round hamburger ham hock. Short ribs pig andouille meatball, pastrami tri-tip fatback ham hock shank kielbasa swine. Rump pancetta jerky kielbasa doner beef ribs tongue hamburger strip steak drumstick andouille shoulder shank flank. Swine drumstick meatball pig beef sausage strip steak.
+        img(ng-src="{{ brick.src }}", alt="A masonry brick", du-parallax, y="background",)
+
 
     li(ng-repeat="post in posts")
         .post

@@ -1,17 +1,27 @@
 extends layout
 
+
 block body
-  header
-    .navbar
-      .container
-        ul.menu.nav.nav-pills
-          li
-            a(href='#/home') Develop David
-          li
-            a(href='#/cv') Curriculum Vitae
-          li
-            a(href='#/apps') Appstore
-          if(loggedIn)
+    .center( style="opacity: {{opacity}}")
+      h1
+        |David Karlsson
+      h4(style="color: white")
+        |Developer & Artist
+      div(class="circular")
+         img(src="./image/face.png", alt="", scroll-fade)
+         //{{opacity}}
+    header
+      .navbar
+       if(loggedIn)
+
+        .container
+          ul.menu.nav.nav-pills
+            li
+              a(href='#/home') Develop David
+            li
+              a(href='#/cv') Curriculum Vitae
+            li
+              a(href='#/apps') Appstore
             li
               a(href='#/addPost') Add Post
             li(style="float: right;")
@@ -25,6 +35,6 @@ block body
 
       .container
       div(ng-view)
-  .footer
+    .footer
       a(href='/#/administrator/') David Karlsson © 2014
 

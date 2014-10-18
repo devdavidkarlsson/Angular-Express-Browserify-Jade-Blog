@@ -1,7 +1,22 @@
 /* jslint node: true */
 'use strict';
 
-function appsCtrl($scope, $http) {
+function appsCtrl($scope, $http,parallaxHelper) {
+
+  $scope.background = parallaxHelper.createAnimator(-0.3);
+
+  $scope.bricks = [
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'},
+    { src: 'http://lorempixel.com/g/280/542/?802'}
+  ];
+
+
   $scope.send = function () {
     $http({
       data    : $scope.ask,

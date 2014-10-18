@@ -1,9 +1,17 @@
 /* jslint node: true */
 'use strict';
 
-function homeCtrl($scope, $http) {
+function homeCtrl($scope, $http, parallaxHelper) {
+
+
+  $scope.background = parallaxHelper.createAnimator(-0.3);
+
+
   $scope.get = function () {
     console.log('home get');
+
+
+
 
     $http({
       data    : $scope.ask,

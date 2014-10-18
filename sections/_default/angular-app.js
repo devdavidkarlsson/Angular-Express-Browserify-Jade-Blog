@@ -10,6 +10,13 @@ require('angular-animate');
 require('angular-sanitize');
 require('text-angular');
 require('text-angular-setup');
+require('outlayer-item');
+require('outlayer');
+require('jquery-bridget');
+require('ng-scroll');
+require('ng-parallax');
+require('scroll');
+
 
 
 angular.module('customFilters', []).
@@ -28,8 +35,9 @@ var app = angular.module('developdavid', [
     'customFilters',
     'ngAnimate',
     'ngSanitize',
-    'textAngular'
-    /*,'wu.masonry'*/
+    'textAngular',
+    'duParallax',
+    'scroll'
     ]);
 app.config(function ($routeProvider) {
   $routeProvider.otherwise({redirectTo : '/home'});
@@ -44,3 +52,5 @@ uiModules.uiModules = [ 'value', uiModules ];
 var injector = new di.Injector([uiModules]);
 
 /* modules browserify */
+
+

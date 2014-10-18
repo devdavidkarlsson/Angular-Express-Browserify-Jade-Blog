@@ -21,11 +21,7 @@ factory('parallaxHelper',
 
 angular.module('duParallax.directive', ['duScroll']).
 directive('duParallax',
-  function($rootScope, $window, $document){
-    //Never mind touch devices
-    if('ontouchstart' in window) {
-      return;
-    }
+  ["$rootScope", "$window", "$document", function($rootScope, $window, $document){
 
     var test = angular.element('<div></div>')[0];
     var prefixes = 'transform WebkitTransform MozTransform OTransform'.split(' '); //msTransform
@@ -37,7 +33,7 @@ directive('duParallax',
       }
     }
 
-    //Skipping browsers withouth transform-support. 
+    //Skipping browsers withouth transform-support.
     //Could do fallback to margin or absolute positioning, but would most likely perform badly
     //so better UX would be to keep things static.
     if(!transformProperty){
@@ -69,7 +65,7 @@ directive('duParallax',
         y : '=',
         x : '=',
         rotation : '=',
-        opacity : '=', 
+        opacity : '=',
         custom : '='
       },
       link: function($scope, $element, $attr){
@@ -83,7 +79,7 @@ directive('duParallax',
           if(!inited) {
             inited = true;
             angular.element($window).on('load', function init() {
-              //Trigger the onScroll until position stabilizes. Don't know why this is needed. 
+              //Trigger the onScroll until position stabilizes. Don't know why this is needed.
               //TODO: Think of more elegant solution.
               var i = 0;
               var maxIterations = 10;
@@ -131,11 +127,11 @@ directive('duParallax',
           }
         };
 
-        $document.on('scroll', onScroll).triggerHandler('scroll');
-        
+        $document.on('scroll touchmove', onScroll).triggerHandler('scroll');
+
         $scope.$on('$destroy', function() {
-          $document.off('scroll', onScroll);
+          $document.off('scroll touchmove', onScroll);
         });
       }
     };
-});
+}]);

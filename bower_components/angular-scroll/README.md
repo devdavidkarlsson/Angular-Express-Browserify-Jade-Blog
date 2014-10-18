@@ -1,7 +1,7 @@
 angular-scroll
 ==============
 
-Only dependent on AngularJS (no jQuery). 6K minified or 1.1K gzipped.
+Only dependent on AngularJS (no jQuery). 8K minified or 2K gzipped.
 
 Example
 -------
@@ -31,11 +31,17 @@ Alias of `.scrollToElement`.
 #### `.scrollToElement( element [, offset, [, duration [, easing ] ] ] )`
 Scrolls to the specified element, if `offset` is passed it will be subtracted from the elements position which is good if one uses floating menus. 
 
+#### `.scrollToElementAnimated( element [, offset, [, duration [, easing ] ] ] )`
+Convenience function. Works exactly the same as `scrollToElement` but uses the default values from `duScrollOffset`, `duScrollDuration` and `duScrollEasing` unless otherwise specified. 
+
 #### `.scrollTop|scrollLeft( )`
 Returns current scroll position. 
 
 #### `.scrollTop|scrollLeft( top [, duration [, easing ] ] )` 
 Scrolls to specified position in either axis, with optional animation. 
+
+#### `.scrollTopAnimated|scrollLeftAnimated( top [, duration [, easing ] ] )` 
+Convenience function like `scrollToElementAnimated` but for `scrollTop`/`scrollLeft`. 
 
 #### Promises
 Animated scrolling returns a `$q` promise, it will resolve when the scrolling has finished or be rejected if cancelled (by starting another scroll animation before it finished).
@@ -61,6 +67,23 @@ angular.module('myApp', ['duScroll']).
 );
 ```
 
+The above example can be achieved by configuration instead of arguments:
+
+```js
+angular.module('myApp', ['duScroll'])
+  .value('duScrollDuration', 2000)
+  .value('duScrollOffset', 30)
+  .controller('myCtrl', function($scope, $document) {
+    $document.scrollTopAnimated(400).then(function() {
+      console && console.log('You just scrolled to the top!');
+    });
+
+    var someElement = angular.element(document.getElementById('some-id'));
+    $document.scrollToElementAnimated(someElement);
+  }
+);
+```
+
 
 Directives
 ----------
@@ -72,7 +95,7 @@ Provides smooth anchor scrolling.
 ```
 
 ### `du-scrollspy`
-Observes wether the target element is at the top of the viewport (or container) and adds an `active` class if so. Takes optional `offset` and `duration` attributes which is passed on to `.scrollTo`,
+Observes whether the target element is at the top of the viewport (or container) and adds an `active` class if so. Takes optional `offset` and `duration` attributes which is passed on to `.scrollTo`,
 
 ```html
 <a href="#anchor" du-scrollspy>Am i active?</a>
@@ -185,6 +208,13 @@ Set the `duScrollGreedy` value to `true` if the elements you are observing are n
 
 ```js
 angular.module('myApp', ['duScroll']).value('duScrollGreedy', true);
+```
+
+### Offset
+To change default offset (in pixels) for the `du-smooth-scroll` directive:
+
+```js
+angular.module('myApp', ['duScroll']).value('duScrollOffset', 30);
 ```
 
 Events
